@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebHelpConnection"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="3721.25" Width="1228.846">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Name="WebPage" ></ColumnDefinition>
+            <ColumnDefinition Name="DialogTest" ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <WebBrowser Name ="LeBrowser" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></WebBrowser>
+        <StackPanel Name ="LePanel" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Button Click="btn_Connect_Click">Connect</Button>
+            <Button Click="btn_Go_Click">Go</Button>
+        </StackPanel>
     </Grid>
 </Window>
